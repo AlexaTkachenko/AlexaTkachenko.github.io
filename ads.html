@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SO widgets general demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <script>
+        var SO_EMBED_URL = '//embed.solidopinion.com/'
+    </script>
+</head>
+<body>
+
+<h1>SO widgets general demo</h1>
+
+<h3>Headline</h3>
+<div class="main">
+    <div class="so_promo_headline"></div>
+    <!-- <button onclick="aps.refreshSlotsWithWaitCounter()">reload AD</button -->
+</div>
+
+<h3>Comments</h3>
+<div class="main">
+    <div class="so_comments"></div>
+</div>
+
+<h3>Community</h3>
+<div class="main">
+    <div class="so_community"></div>
+</div>
+
+<h3>Rating</h3>
+<div class="main">
+    <div class="so_rating"></div>
+</div>
+<span>For enabling rating widget on <a href="//my.solidopinion.com/settings/ads2112#style">//my.solidopinion.com/settings/ads1221#style</a> change widget type to "Comments with Rating"</span>
+
+<script src='//embed.solidopinion.com/so_wl.js'></script>
+<script>
+    $SO.setConfig({
+        sitename: 'ads2112',
+        autoStart: true,
+        phSubmitAutoPosition: true,
+        phSubmitAutoSize: true,
+        customUrlsConfig: {
+          apiUrl: '//api.solidopinion.com',
+          embedUrl: '//embed.solidopinion.com/',
+          backendUrl: '//my.solidopinion.com/',
+          frontendUrl: '//api.solidopinion.com/',
+          siteUrl: '///',
+          moderationUrl: '//api-moderation.solidopinion.com/',
+          cdnUrl: '//sopublic.solidopinion.com/',
+          socketUrl: '//tcd.solidopinion.com/',
+          stats: '//stats.solidopinion.com/',
+          walletUrl: '//user-egt-wallet-master.sod.solidopinion.com/',
+          debugMode: ''
+        }
+    })
+</script>
+
+</div>
+</body>
+</html>
