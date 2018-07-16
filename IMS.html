@@ -1,26 +1,13 @@
 
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
-    <title>SO widgets WPH</title>
+    <title>SO widgets general demo</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-      h3 {
-        margin-left: 20px;
-      }
-      .btn {
-        margin-left: 20px;
-      }
-      body {
-        background-color: #aaa;
-      }
-      .main{
-        padding-top 40px;
-        max-width: 760px;
-        margin: auto;
-      }
-    </style>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
     <script>
         var SO_EMBED_URL = '//discussion-master-embed.sod.solidopinion.com/'
     </script>
@@ -28,24 +15,26 @@
 <body>
 
 <h1>SO widgets general demo</h1>
+
 <h3>Headline</h3>
 <div class="main">
     <div class="so_promo_headline"></div>
+    <!-- <button onclick="aps.refreshSlotsWithWaitCounter()">reload AD</button -->
 </div>
 
 <h3>Comments</h3>
 <div class="main">
-    <div class="so_comments" data-language="pt"></div>
+    <div class="so_comments"></div>
 </div>
 
 <h3>Community</h3>
 <div class="main">
-    <div class="so_community" data-language="pt"></div>
+    <div class="so_community"></div>
 </div>
 
 <h3>Rating</h3>
 <div class="main">
-    <div class="so_rating" data-language="pt"></div>
+    <div class="so_rating"></div>
 </div>
 <span>For enabling rating widget on <a href="//my.solidopinion.com/settings/imsintegration#style">//my.solidopinion.com/settings/imsintegration#style</a> change widget type to "Comments with Rating"</span>
 
@@ -54,17 +43,21 @@
     $SO.setConfig({
         sitename: 'imsintegration',
         autoStart: true,
+        phSubmitAutoPosition: true,
+        phSubmitAutoSize: true,
         customUrlsConfig: {
           apiUrl: '//discussion-master-api.sod.solidopinion.com',
           embedUrl: '//discussion-master-embed.sod.solidopinion.com/',
           backendUrl: '//discussion-master-my.sod.solidopinion.com/',
           frontendUrl: '//discussion-master-api.sod.solidopinion.com/',
           siteUrl: '///',
-          moderationUrl: '//api-moderation.solidopinion.com/',
+          moderationUrl: '//api-moderation-master.sod.solidopinion.com/',
           cdnUrl: '//discussion-master-sopublic.sod.solidopinion.com/',
           socketUrl: '//tcd.solidopinion.com/',
-          stats: '//stats.solidopinion.com/'
-       	   }
+          stats: '//stats.solidopinion.com/',
+          walletUrl: '//user-egt-wallet-master.sod.solidopinion.com/',
+          debugMode: ''
+        }
     })
 </script>
 
