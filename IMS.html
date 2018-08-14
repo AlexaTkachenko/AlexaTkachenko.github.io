@@ -1,67 +1,42 @@
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>SO widgets general demo</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
-    <script>
-        var SO_EMBED_URL = '//embed.solidopinion.com/'
-    </script>
+	<title>ICO eng 02 05 2018</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
 </head>
-<body>
 
-<h1>SO widgets general demo</h1>
 
-<h3>Headline</h3>
-<div class="main">
-    <div class="so_promo_headline"></div>
-    <!-- <button onclick="aps.refreshSlotsWithWaitCounter()">reload AD</button -->
-</div>
 
-<h3>Comments</h3>
-<div class="main">
-    <div class="so_comments" data-language="tr"></div>
-</div>
+    <body>
 
-<h3>Community</h3>
-<div class="main">
-    <div class="so_community" data-language="tr"></div>
-</div>
+<h4>headline block</h4>
+<div class="so_promo_headline" data-edit-link-mode="full,part"></div>
 
-<h3>Rating</h3>
-<div class="main">
-    <div class="so_rating"></div>
-</div>
-<span>For enabling rating widget on <a href="//my.solidopinion.com/settings/engt2#style">//my.solidopinion.com/settings/engt2#style</a> change widget type to "Comments with Rating"</span>
+<h4>comment widget</h4>
+<div class="so_comments" data-language="en"></div>
+
+
+<h4>community widget</h4>
+<div class="so_community" data-language="en"></div>
+
+
 
 <script src='//embed.solidopinion.com/so_wl.js'></script>
-<script>
-    $SO.setConfig({
-        sitename: 'engt2',
-        autoStart: true,
-        phSubmitAutoPosition: true,
-        phSubmitAutoSize: true,
-        customUrlsConfig: {
-          apiUrl: '//api.solidopinion.com',
-          embedUrl: '//embed.solidopinion.com/',
-          backendUrl: '//my.solidopinion.com/',
-          frontendUrl: '//api.solidopinion.com/',
-          siteUrl: '///',
-          moderationUrl: '//api-moderation.solidopinion.com/',
-          cdnUrl: '//sopublic.solidopinion.com/',
-          socketUrl: '//tcd.solidopinion.com/',
-          stats: '//stats.solidopinion.com/',
-          walletUrl: '//wallet.solidopinion.com/',
-          debugMode: ''
-        }
-    })
-</script>
 
-</div>
-</body>
+  <script>
+        $SO.setConfig({
+            sitename: 'imsintegration',
+            contentId: '',
+            autoStart: true,
+            phSubmitAutoPosition: true,
+            phSubmitAutoSize: true
+        })
+    </script>
+    </body>
 </html>
-
